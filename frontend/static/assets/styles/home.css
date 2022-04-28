@@ -1,0 +1,266 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Noto Sans', sans-serif; */
+    /* font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; */
+    font-size:22px;
+}
+
+nav {
+    color: #DDE9FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    /* background: #000220;  */
+    background: #121118; 
+    font-weight: 500;
+    font-size: 19px;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Text Me One'; */
+    /* text-transform: uppercase; */
+    letter-spacing: 0em;
+    line-height: 1.8em;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #a899ff;
+}
+
+h1 {
+    font-family: 'Source Sans Pro';
+    text-shadow: 1.4px 1.4px  #000220;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 4rem;
+    text-align:center;
+}
+
+.h2_title {
+    font-weight: 50;
+    font-style: normal;
+    line-height: 5em;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top:2rem;
+}
+
+.h3_title {
+    font-weight: 50;
+    font-style: normal;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 3.5em;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top:1rem;
+    text-align:center
+}
+
+.h4_title {
+    font-weight: 50;
+    font-style: normal;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2.5em;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top:0.1rem;
+    margin-bottom: 1rem;
+    text-align:center
+}
+
+
+.h3_title_more_line_space {
+    font-weight: 50;
+    font-style: normal;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 5em;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top:1rem;
+    text-align:center
+} 
+a {
+    color:white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.hero { 
+    color: #ffffff;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* centering the background image*/
+    background-repeat: no-repeat;
+    background-image: url('../../images/emt_logo.png');
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    background-color: #121118;
+}
+
+.hook {
+    color: #dfe7ff;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    background-repeat: no-repeat;
+    background-image: url('../../images/opacity_65.png');
+    /* opacity: 0.5; */
+    background-position-y: center;
+    background-position-x: center;
+    background-size:contain;
+    background-color: #171d4b;
+}
+
+
+.problem-statement {
+    color: #dfe7ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left;
+    align-items: left; */
+    background: #121118; 
+}
+
+.col {
+    float: left;
+    width: 33%
+}
+
+.problem-statement-right {
+    text-align: left; 
+    padding-top: 60px;
+}
+
+.row {
+    text-align: center; 
+    display:inline-block;
+    padding: 0;
+    line-height:2em;
+    font-size: 2rem;
+}
+
+
+
+footer {
+    height: 13vh;
+    /* background: #000220;  */
+    background: #171d4b;
+    color: #DDE9FF;
+    padding-top:2vh;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    line-height:2em;
+    font-size: 1rem;
+    width: 100%;
+}
+ a:hover {
+    color: #a899ff;  
+}
+
+
+.button {
+    display: inline-block;
+    height:3.5rem;
+    width: 16rem;
+    padding-top: 5px;
+    color: #dde9ff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px; 
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #464b94;
+    cursor: pointer;
+    box-sizing: border-box; 
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.button:hover {
+    background-color: #a899ff;
+    color:white;
+}
+.logo:hover {
+    
+    background-image: url('../../images/midify_hover.png');
+    background-size: auto;
+}
+
+.button:active {
+    background-color: #9b69b6;
+}
+
+p {
+    text-shadow: 1.6px 1.6px  #000220;
+    font-size: 2.6rem;
+}
+
+
+li {
+    display: list-item;
+    list-style-type: disc;
+}
+
+.extra_blue_space{
+    background-color: #171d4b;
+    height: 10vh;
+}
+
+.extra_dark_blue_space {
+    background-color: #121118;
+    height: 10vh;
+}
+
+.problem_statement_image {
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.consequences {
+    color: #dfe7ff;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    
+    background-color: #171d4b;
+}
+
+.how_it_works {
+    color: #dfe7ff;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #121118; 
+}
+

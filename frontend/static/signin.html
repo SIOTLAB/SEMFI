@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./assets/styles/register_and_login.css">
+
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato”> -->
+    <title> EMT </title>
+    <link rel="icon" type="image/png" href="./images/favicon.png"/>
+</head>
+
+<body>
+    <header>
+		<nav>
+            <!-- <a class="logo" href='./home.html'>  </a>  -->
+            <!-- <img src='./images/emt_logo.png'> -->
+            <a class="h2_title" class="logo" href='./home.html'> <img src='./images/emt_logo.png' alt="EMT" width="150" style="padding: -5px 20px;"> </a>
+			
+        </nav>
+	</header>
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Sign In</h1>
+          <!-- <br> -->
+          <!-- <hr width = 50%> -->
+      
+          <label class ="center_text" for="email"><b>Email:</b></label>
+          <input type="text"  placeholder="Enter Email" name="email" id="email" required>
+      
+          <label class ="center_text" for="psw"><b>Password:</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          <br>
+          <!-- <hr width = 50%> -->
+          <br>
+          <br> 
+          <button type="submit" class="registerbtn"> <a href="./dashboard.html">Sign In</a></button>
+        </div>
+      
+        <div class="container signin">
+          <p>Don't have an account? <a href="./register.html">Register.</a></p>
+        </div>
+    </form>
+</body>

@@ -1,0 +1,180 @@
+* {box-sizing: border-box}
+nav {
+    color: #DDE9FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    /* background: #000220;  */
+    background: #121118; 
+    font-weight: 500;
+    font-size: 19px;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Text Me One'; */
+    /* text-transform: uppercase; */
+    letter-spacing: 0em;
+    line-height: 1.8em;
+    padding-top: 3rem
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #a899ff;
+}
+.logo {
+    background-image: url('../../images/emt_logo.png');
+    background-size: auto;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  color: #DDE9FF;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    /* margin: 5px 0 22px 0; */
+    display: block;
+    position: relative;
+    margin : 0 auto;
+    /* flex-direction: row;
+    justify-content: center; */
+    border: none;
+    background: #85a8ee;
+    align-items: center;
+    /* font-family:  'Quicksand', "Helvetical Neue", Arial, Helvetica, sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; */
+    font-size:14px;
+}
+
+.center_text{
+  width:50%;
+  /* padding: 15px; */
+  /* margin: 5px 0 22px 0; */
+  display: block;
+  position: relative;
+  margin : 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* flex-direction: row;
+  justify-content: center; */
+  align-items: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #85a8ee;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid rgb(55, 67, 121);
+  /* margin-bottom: 25px; */
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #464b94;
+    color: white;
+    /* padding: 16px 20px; */
+    /* margin: 8px 0; */
+    display: block;
+    position: relative;
+    margin : 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+    opacity: 0.9;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 45px; 
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box; 
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.registerbtn:hover {
+    background-color: #a899ff;
+    color:white;
+}
+
+.terms_and_privacy {
+    text-align: center;
+}
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+ .registerbtn > a {
+     color: white;
+     text-decoration: none;
+ }
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background: #121118;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family:  'Quicksand', "Helvetical Neue", Arial, Helvetica, sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; */
+    font-size:16px;
+    background: #121118;
+}
+
+h1 {
+    /* font-family: "Source Sans Pro"; */
+    font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* text-shadow: 1.4px 1.4px  #000220; */
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 2.5rem;
+    text-align:center;
+}
+
+h2 {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 1rem;
+    text-align:center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #171d4b;
+    opacity: 1; /* Firefox */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oxygen:wght@300&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/dashboard.css">
+        <script defer src ='./assets/scripts/dashboard.js'></script>
+    <title> EMT </title>
+    <link rel="icon" type="image/png" href="./images/favicon.png"/>
+</head>
+	
+<body>
+	<header>
+		<nav> 
+            <a class="h2_title" class="logo" href='./dashboard.html'> <img src='./images/emt_logo.png' alt="EMT" width="130" style="padding: -5px 20px;"> </a>
+			<div>
+                <div class="dropdown"> 
+                    <button class="dropbtn">Bucky Bronco  ▾</button>
+                    <div class="dropdown-content">
+                      <a href="./new_device.html">Pair New Device</a>
+                      <a href="./home.html">Log Out</a>
+                    </div>
+                  </div>
+                <a class="settings_icon" href='./settings.html'> ⚙ </a>
+            </div>
+        </nav>
+	</header>
+	<main>
+        <section class='dashboard'>
+            <div class="dashboard-row">
+                <!-- <p class = "dashboard_top_title"> Your EMT Insights </p> -->
+                <p class = "dashboard_top_title"> Your SEMFI Insights </p>
+
+            </div> 
+            <div class="dashboard-row">
+                <div class="dashboard-col" id="rcorners1">
+                    <div class="rows-within-dashboard-col">
+                        
+                        <p class = "dashboard_title"> Number of devices connected </p>
+                        <br><br><br>
+                        <p class = "fancy-number"> 2 </p>
+                        <br><br><br>
+                    </div>
+                </div>
+                <div class="dashboard-col" id="rcorners1">
+                    <div class="rows-within-dashboard-col">
+                        <p class = "dashboard_title"> Energy consumption per device </p>
+                        <div class="pi_chart_label">
+                            <div class="piechart"></div>
+                            <div class="pi_chart_label_devices">
+                                <p class="h5_title" style="color:rgb(192, 220, 255);">■ Device 1</p>
+                                <p class="h5_title" style="color:rgb(117, 115, 253);">■ Device 2</p>
+                            </div>
+                        </div>
+                        
+                    </div>       
+                </div>
+                <div class="dashboard-col" id="rcorners1">
+                    <div class="rows-within-dashboard-col">
+                        <p class = "dashboard_title"> Total days observed </p>
+                        <br><br><br>
+                        <p class = "fancy-number">5</p>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class='dashboard'>
+            <div class="dashboard-row">
+                <p class = "dashboard_top_title"> Device Power Consumption </p>
+            </div> 
+            <div class="dashboard-row">
+                <div class="dashboard-col" id="rcorners1">
+                    <div class="rows-within-dashboard-col">
+                        <p class="device_title"> Device 1 </p>
+                        <div class="figure_box">
+                            <div class="graph_col">
+                                <!-- ../../ebpf_code/figure_1_1.html -->
+                                <iframe class="embed_figure" src="../../ebpf_code/figure_1_1.html" title="Iframe"></iframe>
+                            </div>
+                            <div class="info_col">
+                                <div>
+                                    <p class="graph_title" id="graph_insights_1"> Graph Insights </p>
+                                    <script type="text/javascript" src="../../ebpf_code/percent_duty_cycle.js"></script>
+                                    <canvas id="cvs_1"></canvas>
+                                    <h4 class="h4_title_more_bottom_space"> Percent Awake Time</h4> 
+
+                                    <script type="text/javascript" src="../../ebpf_code/rx_num_packets.js"></script>
+                                    <script type="text/javascript" src="../../ebpf_code/tx_num_packets.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                                    <canvas id="cvs_rx_num_packets_1" style="height: 200px; width: 400px;"></canvas>
+                                    <h4 class="h4_title_more_bottom_space">Packets Received and Transmitted</h4> 
+                                    
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-row">
+                <div class="dashboard-col" id="rcorners1">
+                    <div class="rows-within-dashboard-col">
+                        
+                        <p class="device_title"> Device 2 </p>
+                        <!-- <div class="piechart"></div> -->
+                        <div class="figure_box">
+                            <div class="graph_col">
+                                <iframe class="embed_figure" src="../../ebpf_code/figure_2_2.html" title="Iframe2"></iframe>
+                            </div>
+                            <div class="info_col">
+                                <div>
+                                    <p class="graph_title" id="graph_insights_2"> Graph Insights </p>
+                                    <!-- <script type="text/javascript" src="../../ebpf_code/percent_duty_cycle_2_2.js"></script> -->
+                                    <canvas id="cvs_2"></canvas>
+                                    <h4 class="h4_title_more_bottom_space"> Percent Awake Time</h4> 
+                                    
+                                    <script type="text/javascript" src="../../ebpf_code/rx_num_packets.js"></script>
+                                    <script type="text/javascript" src="../../ebpf_code/tx_num_packets.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                                    <canvas id="cvs_rx_num_packets_2" style="height: 200px; width: 400px;"></canvas>
+                                    <h4 class="h4_title_more_bottom_space">Packets Received and Transmitted</h4> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <footer>
+            © Aastha Chawla, Sreya Goyalia, Nidusha Kannan 2022 <br>
+            Santa Clara University <br>
+            School of Engineering <br>
+        </footer>
+	</main>
+</body>
+</html>
