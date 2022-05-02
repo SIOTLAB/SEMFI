@@ -625,7 +625,7 @@ for I in DEVICES.instances:
     
     
     if (I.total_sleep_time + I.total_awake_time > 0):
-      with open('graph_insights' + '_' + index + '_' + str(count) + '.js', 'w') as f:
+      with open('figures/graph_insights' + '_' + index + '_' + str(count) + '.js', 'w') as f:
         # f.write('percentages=\'[')
         value = round((I.total_awake_time / (I.total_sleep_time + I.total_awake_time)) * 100,2)
         f.write(str(value))
@@ -702,7 +702,7 @@ for I in DEVICES.instances:
     # plt.show()
     # mpld3.show()
     fig.set_size_inches(4, 3)
-    file_name = "./figure_" + index + "_" + str(count)  + ".html"
+    file_name = "./figures/figure_" + index + "_" + str(count)  + ".html"
     mpld3.save_html(fig, file_name)
     f.close()
 
