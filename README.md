@@ -5,8 +5,8 @@ Many WiFi-based Internet of Things (IoT) devices rely on limited energy resource
 
 ## Installation:
 1. Install eBPF version 21 from [iovisor/bcc](https://github.com/iovisor/bcc/releases/tag/v0.21.0). 
-  - Run this command to install all the dependencies for ebpf
-     ```sudo apt install -y bison build-essential cmake flex git libedit-dev \ libllvm7 llvm-7-dev libclang-7-dev python zlib1g-dev libelf-dev libfl-dev  python3- distutils ```
+  - Run this command to install all the dependencies for ebpf:
+    - ```sudo apt install -y bison build-essential cmake flex git libedit-dev \ libllvm7 llvm-7-dev libclang-7-dev python zlib1g-dev libelf-dev libfl-dev  python3- distutils ```
 2. Run the following commands to install bcc and eBPF:
     ``` mkdir bcc/build; cd bcc/build
     cmake ..
@@ -14,15 +14,18 @@ Many WiFi-based Internet of Things (IoT) devices rely on limited energy resource
     cmake -DPYTHON_CMD=python3 .. # build python3 binding
     make -j8
     sudo apt install python3.8-distutils
-    sudo make install ```
+    sudo make install 
+    ```
 3. Additional commands:
-    ``sudo apt install python3-pip
+    ```sudo apt install python3-pip
     pip3 install matplotlib
-    sudo apt-get install python3-bpfcc``
+    sudo apt-get install python3-bpfcc
+    ```
 4. Additional hostapd installation commands:
     ```sudo apt-get install libssl-dev
     sudo apt install libnl-3-dev
-    sudo apt-get install libnl-genl-3-dev```
+    sudo apt-get install libnl-genl-3-dev
+    ```
 5. Run the PEM file: `sudo strace -e bpf python3 PEM_final_Ebpf_main.py`
     - Be sure the PEM file has the correct pathways in the include/import statements.
     - If necessary, download [linux 5.10.80](https://www.linuxcompatible.org/story/linux-kernel-51080-released/) onto the desktop.
