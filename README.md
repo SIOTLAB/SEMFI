@@ -4,7 +4,7 @@
 Many WiFi-based Internet of Things (IoT) devices rely on limited energy resources such as battery. Although monitoring and studying the energy consumption of these devices is essential, the use of external, hardware-based energy measure- ment tools is costly and non-scalable, and also introduces many challenges regarding the connectivity of such tool with devices. In this paper, we propose Software-based Energy Management Tool for WiFi (SEMFI), a novel tool to collect, analyze, and monitor the power cycles of IoT devices without need for any external tools. The basic idea is to modify the WiFi Access Point (AP)’s software to keep track of the power status of stations reported in packets. SEMFI also includes backends and frontend components for data storage, analysis, and visualization. We demonstrate the effectiveness and features of SEMFI via empirical evaluations.
 
 ## Installation:
-1. Install eBPF from iovisor/bcc. Each kingdel has version 21. 
+1. Install eBPF version 21 from [iovisor/bcc](https://github.com/iovisor/bcc/releases/tag/v0.21.0). 
   - Run this command to install all the dependencies for ebpf
      ```sudo apt install -y bison build-essential cmake flex git libedit-dev \ libllvm7 llvm-7-dev libclang-7-dev python zlib1g-dev libelf-dev libfl-dev  python3- distutils ```
 2. Run the following commands to install bcc and eBPF:
@@ -24,8 +24,8 @@ Many WiFi-based Internet of Things (IoT) devices rely on limited energy resource
     sudo apt install libnl-3-dev
     sudo apt-get install libnl-genl-3-dev```
 5. Run the PEM file: `sudo strace -e bpf python3 PEM_final_Ebpf_main.py`
-    - Be sure the PEM file has the correct pathways in the include/import statements!
-    - Used https://www.linuxcompatible.org/story/linux-kernel-51080-released/ to download linux 5.10.80 onto desktop.
+    - Be sure the PEM file has the correct pathways in the include/import statements.
+    - If necessary, download [linux 5.10.80](https://www.linuxcompatible.org/story/linux-kernel-51080-released/) onto the desktop.
 
 ## Organization / Layout:
 - `ebpf_logs/`:
