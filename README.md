@@ -5,7 +5,7 @@ Many WiFi-based Internet of Things (IoT) devices rely on limited energy resource
 
 ## Installation:
 1. Install eBPF version 21 from [iovisor/bcc](https://github.com/iovisor/bcc/releases/tag/v0.21.0). 
-  - Run this command to install all the dependencies for ebpf:
+  - Run this command to install all the dependencies for eBPF:
     - ```sudo apt install -y bison build-essential cmake flex git libedit-dev \ libllvm7 llvm-7-dev libclang-7-dev python zlib1g-dev libelf-dev libfl-dev  python3- distutils ```
 2. Run the following commands to install bcc and eBPF:
     ``` mkdir bcc/build; cd bcc/build
